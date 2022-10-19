@@ -8,11 +8,11 @@ app.use(express.json())
 app.use(cors())
 app.use(express.static('public'))
 
-const { getHTML, getCSS } = require('./controller')
+const { getHTML, getCSS, getJS} = require('./controller')
 
 app.get('/', getHTML)
 app.get('/css', getCSS)
-app.get('/js'. getJS)
+app.get('/js', getJS)
 
 const port = process.env.PORT || 4000
 
