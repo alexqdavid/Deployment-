@@ -9,5 +9,10 @@ llama.addEventListener('click', helloAlert)
 
 let song = document.querySelector('audio')
 
+function playAudio() {
+    song.play();
+}
+
+song.addEventListener('click',playAudio)
 
 
