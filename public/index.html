@@ -9,12 +9,24 @@
 </head>
 <body>
     <p>Drama Llama</p>
-    <audio id="myaudio">
-        <source src="horse.mp3" type="audio/ogg">
-    </audio>
+    <div>
+            <audio id="myaudio"> 
+            <source src="horse.mp3" type="audio/ogg">
+            </audio>
+            <p>Come Here Let Me Tell You Who The Muffin Man Is</p>  
+            <button onclick="playAudio()" type="button">The Muffin Man Is</button>
+            <script>
+                var x = document.getElementById("myaudio"); 
+                
+                function playAudio() { 
+                  x.play(); 
+                } 
+                </script>
+    </div>
+   
+       
     <img src="./images/Funny-Llama-01.jpg" alt="Llama">
-    <p>Come Here Let Me Tell You Who The Muffin Man Is</p>  
-    <button onclick="playAudio()" type="button">The Muffin Man Is</button>
+    
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="/js"></script>
 </body>
