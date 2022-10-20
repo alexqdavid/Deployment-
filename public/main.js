@@ -7,11 +7,3 @@ const helloAlert = evt => {
 
 llama.addEventListener('click', helloAlert)
 
-let playAudio = document.querySelector('audio')
-
-const audioAlert = evt => {
-
-}
-
-playAudio.addEventListener('click', audioAlert)
-
