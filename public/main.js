@@ -7,3 +7,7 @@ const helloAlert = evt => {
 
 llama.addEventListener('click', helloAlert)
 
+let song = document.querySelector('audio')
+
+
+
