@@ -17,31 +17,66 @@ html, body {
 }
 
 #body {
-background-image: url(./images/Marais_Poitevin_Waterway_Vendee_France_Elisa_Locci_shutterstock_1349843330-1024x683.jpg);
+/* background-image: url(./images/1095013.jpg);
 background-repeat: no-repeat;
-background-size: cover;
+background-size: cover; */
+background: linear-gradient(#95BF74, #659B5E);
 }
 
 #title {
- text-align: center;
+text-align: center;
+font-family: fantasy;
+color: black;
 }
 
-li {
-    float:left;
-}
-
-li a {
+.link {
     display: block;
     padding: 8px;
-    background-color: yellowgreen;
 }
 
-ul {
-   position: fixed;
-   top: 0;
-   width: 100%;
-}
-
-li a:hover {
+/* :hover {
     background-color: aquamarine;
+} */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+}
+body {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+#s {
+  padding-top: 40px;
+}
+
+#s1 {
+  margin-top: 2000px;
+  padding: 20px 20px 2000px 20px;
+  background-color: #95BF74;
+}
+
+#s2 {
+  margin-top: 2000px;
+  padding: 20px 20px 2000px 20px;
+  background-color: #659B5E;
+}
+
+#s3 {
+  margin-top: 2000px;
+  padding: 20px 20px 2000px 20px;
+  background-color: #556F44;
+}
+
+#s4 {
+  margin-top: 2000px;
+  padding: 20px 20px 2000px 20px;
+  background-color: #99DDC8;
+}
+
+html {
+  scroll-behavior: smooth;
 }
