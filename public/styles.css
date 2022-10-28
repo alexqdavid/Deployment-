@@ -1,10 +1,4 @@
-/* html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    
-}
+/* 
 #img {
     display: block;
     background-size: cover;
@@ -14,69 +8,8 @@
     border-radius: 60%;
     margin-left: auto;
     margin-right: auto;
-}
-
-body {
-background-image: url(./images/1095013.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background: linear-gradient(#95BF74, #659B5E);
-}
-
-#title {
-text-align: center;
-font-family: fantasy;
-color: black;
-font-size: 100px;
-}
-
-.link {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* :hover {
-    background-color: aquamarine;
+    
 } */
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#s {
-  padding-top: 40px;
-}
-
-#s1 {
-  margin-top: 1000px;
-  padding: 20px 20px 1000px 20px;
-  background: linear-gradient(#95BF74, #659B5E);
-}
-
-#s2 {
-  margin-top: 1000px;
-  padding: 20px 20px 1000px 20px;
-  background: linear-gradient(#95BF74, #659B5E);
-}
-
-#s3 {
-  margin-top: 1000px;
-  padding: 20px 20px 1000px 20px;
-  background: linear-gradient(#95BF74, #659B5E);
-}
-
-#s4 {
-  margin-top: 1000px;
-  padding: 20px 20px 1000px 20px;
-  background: linear-gradient(#95BF74, #659B5E);
-}
-
-html {
-  scroll-behavior: smooth;
-} 
 
 * {
  margin: 0;
@@ -89,8 +22,8 @@ body {
 
 nav {
   width: 100%;
-  height: 100px;
-  background-color: #fff;
+  height: 60px;
+  background-color: bisque;
 }
 
 ul {
@@ -101,7 +34,7 @@ ul li {
  list-style: none;
  display: inline-block;
  float: left;
- line-height: 100px;
+ line-height: 60px;
 }
 
 ul li a{
@@ -117,18 +50,43 @@ ul li a:hover{
    color: red;
    
   }
-
+/* 
   .wrapper {
     margin: 0 auto;
     width: 1000px;
-  }
+  } */
 
   .frog {
     width: 300px;
   }
 
   body {
-    background-image: url(./images/1095013.jpg);
+    background-image: url(./images/3710EA59-7C45-4311-BBD3-AD10D5EFD358.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  #about {
+    color: #fff;
+  }
+
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #1e1e1e;
+
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+  }
+
+  nav a:hover::before {
+    width: 100%;
+  }
+
+  p {
+    color: red;
   }
