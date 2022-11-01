@@ -96,6 +96,7 @@ let update = (id) => {
     let search = basket.find((x) => x.id === id)
     document.getElementById(id).innerHTML = search.item
     sum()
+    total()
 };
 let deleteItem = (id) => {
 let selectedItem = id
@@ -103,11 +104,34 @@ basket = basket.filter((x) => x.id !== selectedItem.id)
 cartItems()
 localStorage.setItem("cart", JSON.stringify(basket))
 sum()
+total()
+};
+let clearCart = (id) => {
+basket = []
+cartItems();
+localStorage.setItem("cart", JSON.stringify(basket))
+sum()
+total()
 };
 let total = (id) => {
     if(basket.length !== 0){
-        else return
-    }
+        let amount = basket.map((x) => {
+            let {id,item} = x;
+            let search = items.find((x) => x.id ===id) || []
+            
+            return item * search.price;
+        }).reduce((x,y) => x + y, 0)
+        label.innerHTML = `
+        <h2>Total = $ ${amount}</h2>
+        <button onclick="buy()" class="checkOut">Check Out</button>
+        <button onclick="clearCart()" class="delete">Clear Chache</button>
+        `;
+    } else return;
 };
 
-console.log(cartItems);
+function buy(){
+    alert("Thank you for giving my friends a home!");
+    clearCart()
+}
+
+total()

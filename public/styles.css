@@ -216,9 +216,12 @@ margin-right: 10px;
   margin: 30px 0;
   border-radius: 30px;
   transition: background 0.5;
+  
  }
 
- .btn:hover {
+ .btn:hover,
+ .delete,
+ .checkOut {
   background: red;
  }
 
@@ -266,7 +269,7 @@ margin-right: 10px;
 
  .shop {
   display: grid;
-  grid-template-columns: repeat(4, 223px);
+  grid-template-columns: repeat(5, 223px);
   justify-content: center;
   gap: 40px;
  }
@@ -330,7 +333,9 @@ margin-right: 10px;
   width: 100vw;
  }
 
- .homeBtn{
+ .homeBtn,
+ .delete,
+ .checkOut{
   display: inline-block;
   background-color: green;
   color: white;
@@ -377,3 +382,8 @@ width: 195px;
   font-weight: bold;
 }
  
+.kaf{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
