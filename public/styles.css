@@ -2,7 +2,7 @@
 #img {
     display: block;
     background-size: cover;
-    background-image: url(images/Pepedankmeems420blazeitohbabyatripledankaestheticafkeepit100.jpg);
+    background-image: url(images/pepe.jpg);
     height: 100px;
     width: 100px;
     border-radius: 60%;
@@ -24,8 +24,22 @@ nav {
 
   width: 100%;
   height: 60px;
-  background-color: green
+  background-color: green;
+  border: black solid 2px;
+  
 }
+
+@media (max-width: 1000px) {
+  nav{
+    grid-template-columns: auto;
+  }
+ }
+
+ @media (max-width: 500px) {
+  nav{
+    grid-template-columns: repeat(1, 223px);
+  }
+ }
 
 ul {
  margin-left: 60px;
@@ -54,7 +68,7 @@ ul li a:hover{
 
   .wrapper {
     margin: 0 auto;
-    width: 1000px;
+    width: 100vw;
   }
 
   .frog {
@@ -140,7 +154,7 @@ padding: 5px;
   }
 
   td a {
-    color: green;
+    color: rgb(255, 0, 0);
     font-size: 12px;
   }
 
@@ -178,9 +192,10 @@ margin-right: 10px;
   display: flex;
   width: 100vw;
   align-items: center;
+  
  }
 
- .flex-column {
+ #flex-column {
   display: flex;
   flex-direction: column;
   width: 50vw;
@@ -189,7 +204,7 @@ margin-right: 10px;
 
  #swamp {
   width: 50vw;
-  padding: 50px;
+  padding: 50px 0;
  }
 
 
@@ -242,7 +257,11 @@ margin-right: 10px;
 }
   
   .swampshop{
-    background-color: yellowgreen;
+    background-color: rgb(83, 240, 59);
+  }
+
+  .about{
+    background-color: rgb(29, 211, 108);
   }
 
  .shop {
@@ -302,3 +321,59 @@ margin-right: 10px;
  i{
   cursor: pointer;
  }
+
+ .text-center{
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+ }
+
+ .homeBtn{
+  display: inline-block;
+  background-color: green;
+  color: white;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.5;
+ }
+
+ .shopping-cart{
+  display: grid;
+  grid-template-columns: repeat(1. 320px);
+  justify-content: center;
+  gap: 15px;
+ }
+
+ .cart-item{
+border: 2px solid black;
+border-radius: 5px;
+display: flex;
+}
+
+.title-price-x{
+display: flex;
+align-items: center;
+justify-content: space-around;
+width: 195px;
+}
+
+.title-price{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-item-price{
+  background-color: white;
+  border-radius: 4px;
+  padding: 3px 6px;
+}
+
+.bi-x-lg{
+  color: red;
+  font-weight: bold;
+}
+ 
