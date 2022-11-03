@@ -1,5 +1,5 @@
 
-#img {
+ .logo {
     display: block;
     background-size: cover;
     background-image: url(images/pepe.jpg);
@@ -272,6 +272,7 @@ margin-right: 10px;
   grid-template-columns: repeat(5, 223px);
   justify-content: center;
   gap: 40px;
+  
  }
 
  @media (max-width: 1000px) {
