@@ -106,14 +106,14 @@ localStorage.setItem("cart", JSON.stringify(basket))
 sum()
 total()
 };
-let clearCart = (id) => {
+let clearCart = () => {
 basket = []
 cartItems();
 localStorage.setItem("cart", JSON.stringify(basket))
 sum()
 total()
 };
-let total = (id) => {
+let total = () => {
     if(basket.length !== 0){
         let amount = basket.map((x) => {
             let {id,item} = x;
@@ -124,14 +124,14 @@ let total = (id) => {
         label.innerHTML = `
         <h2>Total = $ ${amount}</h2>
         <button onclick="buy()" class="checkOut">Check Out</button>
-        <button onclick="clearCart()" class="delete">Clear Chache</button>
+        <button onclick="clearCart()" class="delete">Clear Cart</button>
         `;
     } else return;
 };
 
-function buy(){
-    alert("Thank you for giving my friends a home!");
+let buy = () => {
     clearCart()
+    alert("Thank you for giving my friends a home!");   
 }
 
 total()
